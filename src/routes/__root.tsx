@@ -10,7 +10,6 @@ import { GlobalOverlayScrollbar } from "~/components/common/overlay-scrollbar"
 import { Footer } from "~/components/footer"
 import { Toast } from "~/components/common/toast"
 import { SearchBar } from "~/components/common/search-bar"
-import { PlausibleAnalytics } from "~/components/analytics/plausible"
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient
@@ -67,7 +66,6 @@ function RootComponent() {
       </GlobalOverlayScrollbar>
       <Toast />
       <SearchBar />
-      <PlausibleAnalytics />
       {import.meta.env.DEV && (
         <>
           <ReactQueryDevtools buttonPosition="bottom-left" />
